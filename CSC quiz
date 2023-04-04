@@ -1,0 +1,55 @@
+yourname= input ("please inter you name here,  please type all things alphabetic only")
+ 
+print(f"Hello {yourname} Let's do 5 quiz about historys. Remember answer with captial letters. Hope you have good luck:> ")
+
+Level_quiz=("Q1,medium","Q2,Hard","Q3,Easy","Q4,Medium","Q5,medium")
+print (f"This is the level of the quiz{Level_quiz}")
+
+
+
+user_answer = input("The first question, Who was the fourth president of the United States?")#To set up the question and get answers from the user.
+
+Quiz_Answer = ("James Madison") #Use a variable to stock answer.
+
+if user_answer == Quiz_Answer:# To compare the user answer and the answer are correct or not.
+  print("You are correct, congradualations")#Response when you are right.
+  
+else:
+  print(f"Sorry you are wrong,the answer is {Quiz_Answer}")#Response when you are wrong.
+  
+user_answer=input("Now second question, Which year was the first known use of the word 'quiz'? ")# set a varible for stock user answer and set the question.
+Quiz_Answer=("1781")#Set the answer in a variable.
+if user_answer == Quiz_Answer:#Compare two variables if they are the same.
+  print("correct") #Response when correct
+  
+else:
+   print(f"The answer is '1781', not {user_answer!r}")# Response when answer are incorrect.
+
+user_answer=input ("Question 3 is. Which year was World War 2 begin") # To form the question and get the user's answer
+Quiz_Answer=("1914")#
+
+if user_answer==Quiz_Answer:#Compare if user answer is the same as fhe answer.
+  print("correct, good job!!!")#Response when correct
+else:
+  print(f'the answer is 1914. Not {user_answer}')#Response when incorrect.
+
+user_answer=input("Now is question 4. Fill in the blank: The 19th Amendment guarantees ____ the right to vote?") # Form the question and get user's response
+Quiz_Answer=("Women")
+if user_answer==Quiz_Answer: #Compare user' response with the answer
+  print("Nice, you are so smart!!!")#Outcome when answer is correct
+else:
+  print(f"The answer is Women,not {user_answer}")#outcome when answer is incorrect
+
+user_answer=input("Now the last question, which country was Adolf Hitler born?")#Set the question and get response
+Quiz_Answer=("Austria")#Set answer
+if user_answer==Quiz_Answer:# Comparing user's reaponse is the same as the answer
+  print("Yes you are right")
+else:
+  print(f"The answer is Austria, not {user_answer}")#response when answer are incorrect.
+
+def last_greeting():
+  print(f" You finished it, well done!! Thank you for participate {yourname} Have a nice day:>")
+
+last_greeting()
+
+
